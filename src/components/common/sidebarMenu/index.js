@@ -59,8 +59,8 @@ class SidebarMenu extends Component {
 
                                     </div>
                                     <div className={s.profileDetails}>
-                                        <span className={s.userName}>{userDataReducer.name}</span>
-                                        <span className={s.userCont}>{userDataReducer.contactNo}</span>
+                                        <span className={s.userName}>Hunger Point</span>
+                                        <span className={s.userCont}>Welcome Foodies</span>
                                     </div>
                                 </div>
                             </div>

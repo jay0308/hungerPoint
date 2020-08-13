@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import s from "./header.module.scss";
 import MenuIcon from '@material-ui/icons/Menu';
 import SidebarMenu from "../sidebarMenu";
-import SearchIcon from '@material-ui/icons/Search';
-import SearchComponent from "../searchComponent";
 import { Link } from "react-router-dom";
 import global from "../../../utils/common";
 
@@ -92,8 +90,7 @@ class Header extends Component {
         const { userDataReducer, getUser, userList, headerHeight, screenName } = this.props;
         return (
             <div className={s.defaultHeader}>
-                {userDataReducer && <span className={s.hamburger} onClick={this.openSidebarMenu}><MenuIcon /></span>}<Link to="/"><span>Guide Bus</span></Link>
-                {/* {userDataReducer && <span className={s.SearchIcon} onClick={this.openSearch}><SearchIcon /></span>} */}
+                 <span className={s.hamburger} onClick={this.openSidebarMenu}><MenuIcon /></span><Link to="/"><span>Hunger Point</span></Link>
                 
             </div>
         )
@@ -125,15 +122,6 @@ class Header extends Component {
                     <SidebarMenu
                         closeSidebarMenu={this.closeSidebarMenu}
                         userDataReducer={userDataReducer}
-                    />
-                }
-                {
-                    this.state.showSearch &&
-                    <SearchComponent
-                        closeSearch={this.closeSearch}
-                        userList={userList}
-                        getUser={getUser}
-                        userClickHandler={this.userClickHandler}
                     />
                 }
             </React.Fragment>
