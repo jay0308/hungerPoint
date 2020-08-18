@@ -52,8 +52,7 @@
     "eject": "react-scripts eject",
     "start-server:dev": "NODE_ENV=development node server/index.js",
     "start-server:prod": "NODE_ENV=production node server/index.js",
-    "shorthand": "npm run build && npm run start-server:prod",
-    "heroku-postbuild": "npm run shorthand"
+    "shorthand": "npm run build && npm run start-server:prod"
   },
   "eslintConfig": {
     "extends": "react-app"
