@@ -2,7 +2,6 @@
     "ENV": "prod",
     "DB_URL": "localhost:27017",
     "PUBLIC_URL": "https://hunger-point.herokuapp.com",
-    "PORT": "80",
     "SMS_KEY": "e2333edf",
     "SMS_SECRET_KEY": "PWfVtWo1CiDKsPkH",
     "DB": "guidebusdb",
