@@ -24,32 +24,7 @@ class Footer extends Component {
       <div className={s.footerSec}>
         {global.isMobile() && (
           <div className={`${s.footerMenu}`}>
-            <span className={`${s.menu} ${screenName === "home" ? s.active : ""}`} onClick={this.handleChange}>
-              <Link to="/">
-                <HomeIcon className={s.icon} />
-                Home
-                </Link>
-            </span>
-            <span className={`${s.menu} ${screenName === "myBookings" ? s.active : ""}`}>
-              <Link to="/myBookings">
-                <ListIcon /> My Bookings
-                </Link>
-            </span>
-
-            <span className={`${s.menu} ${screenName === "help" ? s.active : ""}`}>
-
-              <Link to="">
-                <HeadsetMicIcon />
-                Help
-              </Link>
-            </span>
-            <span className={`${s.menu} ${screenName === "myAccount" ? s.active : ""}`}>
-
-              <Link to="">
-                <AccountCircleIcon />
-                My Account
-              </Link>
-            </span>
+            Hungerspoint | It's too yummy...
           </div>
         )}
       </div>
